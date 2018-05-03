@@ -1,3 +1,7 @@
+# Isabel's additions to tutorial
+
+![](readme_images/new-york-tims.png)
+
 # CS52 Workshops: Chrome Extensions
 
 We don't need a new domain name to change the way we interact with the web! Today we'll be customizing our browser with a Chrome extension. Chrome extensions can serve as many functions as your imagination can create, but today we'll be using simple code to tweak the way you experience webpages of any degree of complexity.
@@ -193,7 +197,7 @@ This tells the browser that your extension will be using various parts of the Go
 },
 ```
 
-Cool, we're done with the manifest! Let's move on to the background script. 
+Cool, we're done with the manifest! Let's move on to the background script.
 * Create a `background.js` and add the following to it:
 
 ```javascript
@@ -212,7 +216,7 @@ var enable=false;
 chrome.storage.sync.set({"enable": enable});
 ```
 
-We are using chrome's storage to keep track of the state of this boolean. We want to change the state of this boolean when we click on the icon. 
+We are using chrome's storage to keep track of the state of this boolean. We want to change the state of this boolean when we click on the icon.
 * Let's add an onClick Listener to the icon, passing into it a callback that gets executed:  
 
 ```Javascript
